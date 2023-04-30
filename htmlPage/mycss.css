@@ -1,0 +1,16 @@
+body {
+    margin: 20px;
+    
+  }
+  span {
+      border-style: solid;
+      border-color: black;
+        width: 80px;
+      height:80px;
+       display: inline-block;
+      font-size: 60pt;
+      text-align: center;
+     
+        
+  }
+            
