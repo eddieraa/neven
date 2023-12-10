@@ -1,0 +1,10 @@
+Ctrl+K, Ctrl+C      : comment selection
+Ctrl+Del            : delete word
+Ctrl+F              : find
+Ctrl+L              : select line
+Maj+Alt+Down/Up     : extend line down or up
+Ctrl+Maj+Enter      : new line up
+Ctrl+Enter          : new line
+Ctrl+ù              : open or close terminal
+Ctrl+H              : replace
+Ctrl+Alt+Down/Up    : write on multiple line

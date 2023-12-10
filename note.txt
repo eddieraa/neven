@@ -1,0 +1,9 @@
+C++ (intermédiaire)                                                                         (objectif 21 Mai) //
+python                                                                                      (objectif 28 Mai) //
+C#, C, Java, GO, Swift, Rust, PHP (Base)                                                    (objectif 5 Juin) //
+SQL                                                                                         (objectif 15 + 2 Juin) //
+HTML/CSS + JavaScript + Programmation Web                                                   (objectif 30 Juin)
+Fichiers & extensions + CMD + Contrôle ordinateur                                           (objectif 5 Juillet)
+API et programmation interlanguages + programmation et base de donnée                       (objectif 31 Juillet)
+Cours NSI + Achitecture & Assembleur & fonctionnement de l'ordinateur                       (objectif 19 Juillet)
+C++ + recherche sur le développement de jeux vidéo + Blender + création pizza clicker 3D    (objectif 4 septembre)

@@ -1,0 +1,316 @@
+introduction:
+    HyperText Markup Language - 1993
+    Cascading Style Sheets - 1996
+
+tag:
+    orphelin tag:
+        <!DOCTYPE html>             : define file type as HTML
+        <br>                        : back to line = \n
+        <hr>                        : <br> + separation line
+        <meta charset={encoding}>   : indicates encoding
+        <wbr>                       : line break in a word
+    <!--   -->    : comment
+    <html>        : contains html content
+    <head>        : contains header
+    <title>       : title, tab name
+    <body>        : contains the page body
+    <p>           : contains text and separates texts
+    <strong>      : bold
+    <b>           : bold, less than <strong> (not recommended)
+    <del>         : cross out
+    <s>           : cross out : useless information (not recommended)
+    <ins>         : underline
+    <mark>        : highlight
+    <em>          : italics
+    <i>           : italics (not recommended)
+    <q>           : quote (attribute : cite)
+    <cite>        : quote: title, document name, content name
+    <blockquote>  : (attribute : cite)
+    <details>     : antispoil
+        <summary>   </summary>     : change <details> title
+        .
+    <a>           : hypertext link (attribute : href, title, target)
+        href:
+            "mailto:{mail address}"
+            .
+
+    <abbr>       : indicate abbreviation and show meaning (attribute : title)
+    <address>    : indicate contact information
+    <bdi>        : corrects direction of a string (attribute : dir)
+    <bdo>        : impose direction of a string (attribute : dir)
+        dir (same for <bdi> and <bdo>):
+            "ltr" : left to right
+            "rtl" : right to left
+            .
+    <dfn>        : indicates a word to be defined
+    <dl>         : definition list
+    <dt>         : definition term
+    <dd>         : definition description
+    <dialog>     : 
+    <progress>   : show loading bar, at value / max * 100 % filled in blue (attribute : value, max)
+    <sub>        : 2 -> 2
+    <sup>        : 2 -> ²
+
+    <code>     : font adapted to the code
+    <kbd>      : indicate keyboard control
+    <meter>    : show loading bar, at value * 100 % filled in green (attribute : value, min, max, high, low, optimum)
+        high:
+            threshold where value is high
+        low:
+            threshold where value is low
+        optimum:
+            threshold where value is optimum
+            .
+    <output>   : indicate result
+    <pre>      : doesn't ignore tabulation, space and back to line when print
+    <ruby>     : destinate to eastern languages
+        <rt> : write above the preceding characters
+        <rp> : indicates words for pronunciation
+    <samp>     : indicates program output
+    <time>     : indicates time (attribute : datetime)
+        datetime:
+            "(year)-(month)-(day) (hour):(minute):(second)"
+            .
+    <var>      : indicates variable
+
+    <ol>      : ordered list (attribute : reverse, start)
+    <ul>      : unordered list
+        same for <ol> and <ul>
+        <li>   : list element
+        .
+    <table>   : creation table
+        <caption>    : title table
+        <thead>      : table header
+        <tbody>      : table body
+        <tfoot>      : table foot
+        <tr>         : table line
+            <td>   : column (attribute : rowspan)
+            <th>   : header colomn (attribute : colspan, abbr, id, headers)
+        <colgroup>   : column style
+            <col>   : (attribute : class, span)
+        .
+
+    <form>      : formulaire (attribute : method, action, target, autocomplete, enctype, accept-charset)
+        method          : "get" : add form element in url, "post" : inject element
+        action          : destination
+        target          : "_blank", "_top", "_self", "_parent"
+        autocomplete    : "on" / "off"
+        <input>         : input (attribute : name, id, placeholder, type, value, min, max, step, autocomplete, pattern, requiered, list)
+            type    : "text", "password", "checkbox", "radio", "color", "date", "datetime-local",
+                      "email", "tel", "month", "week", "search", "range", "number", "submit", "reset"
+        <label>         : focus on the input field (attribute : for)
+        <fieldset>      : (attribute : form, disabled)
+            <legend>    : indicate legend
+            <textarea>  : create an area on text (attribute : name, rows, cols, minlength, maxlength)
+            <datalist>  : (attribute : id)
+            <select>    : selection in option list (attribute : name, form, requiered, size, multiple)
+                <optgroup>  : option group (attribute : label)
+                <option>    : an option in selection (attribute : label, value, disabled)
+        .
+    <button>    : create button (attribute : type, formmethod, formaction)
+
+    <img>       : show image (attribute : src, alt, width, height, longdesc, usemap)
+        src     : image name, link to image
+        alt     : alternative text to image
+        usemap  : "#{mapname}" link image to map
+    <figure>    : add indication for image
+        <figcaption>    : legend / credit
+    <map>       : define map (attribute : name)
+        <area>  : create area on map (attribute : href, shape, coords)
+            shape : "rect", "circle", "poly"
+            coords : rect : x1,y1 x2,y2 / circle : x, y, r / poly : x1,y1 x2,y2 ......
+    
+    <div>       : content block separator
+    <span>      : changing a line segment with css (attribute : class)
+    <main>      : main content
+    <section>   : titled content section
+    <article>   : independant information section
+    <header>    : header
+    <footer>    : footer
+    <nav>       : naviguation menu
+    <aside>     : aside content
+
+    <h1>    : big title
+    ...     : from h1 to h6
+    <h6>    : small title
+
+universal attribute:
+    name
+    id
+    value
+    placeholder
+
+entities:
+    < : &lt;
+    > : &gt;
+    & : &amp;
+    © : &copy;
+
+design:
+    <link>  : make relation between different file (attribute : rel, href)
+        rel : "stylesheet" for css
+    <style> : write css code directly in html document, not recommended
+
+    {(selector) (\[attribute=value\]) (#{id}) (.{class})}
+    {
+        {property}:{value}
+    }                   : css code
+
+property:
+    block:
+        background          : set all background parameters         (color, image, position, size, repeat, origin, attachement)
+            background-color    : set background color          (color)
+            background-image        : set image in background               (url())
+            background-position     : set background image position         ((px, px) / (%, %) / top / bottom / center)
+            background-size         : set background image size             (% / cover / contain / (px, px))
+            background-repeat       : set background image repetition       (no-repeat / reapeat-x / repeat-y / space / round / border / content)
+            background-origin       : idk                                   (padding-box / border-box / content-box)
+            background-attachement  : set background movement when scroll   (local / scroll / fixed)
+            .
+        width               : set width                     (px)
+            min-width   |   max-width
+            .
+        height              : set height                    (px)
+            min-height  |   max-height
+            .
+        padding             : set in-block-content marge    (top, right, bottom, left)
+            padding-top | padding-bottom | padding-left | padding-right
+            .
+        border              : add border                    (px, style, color)
+            style   : solid, dashed, dotted, double, groove, ridge, inset, outset
+            border-width    : set border width
+            border-style    : set border style
+            border-color    : set border color
+            border-top | border-bottom | border-right | border-left
+            .
+        border-image        : set image to border           (source, wlice, width, outset, repeat)
+        border-radius       : make rounded border edges     (px, px, px, px)
+            border-top-left-radius | border-top-right-radius | border-bottom-left-radius | border-bottom-right-radius
+            .
+        box-shadow          : add shadow to block           (px, px, px, color)
+        box-sizing          : manage blocks border in relation to padding, border etc...
+            border-box      : adjust block border
+        outline             : set outline                   (px, style, color)
+        outline-offset      : set outline offset            (px)
+        margin              : set block marge               (auto)
+            margin-top | margin-bottom | margin-left | margin-right
+            .
+        overflow            : manage to long word in block  (auto / hidden / scroll)
+            overflow-x
+            overflow-y
+            overflow-wrap   : (break-word)
+            .
+    text:
+        font                : set all parameter to font (style, variant, weight, size, height, family)
+            font-style          : set font style            (type : italics / normal / oblique)
+            font-variant        : set font                  (font type : normal / small-caps)
+            font-weight         : set font weight           (type : normal / bolder / lighter / 100 to 900)
+            font-size           : set font size             (px / % / em / ex / size)
+                sizes : xx-small / x-small / small / medium / large / x-large / xx-large
+                .
+            line-height         : set line spacing          (px / % / em / ex / size)
+                sizes : xx-small / x-small / small / medium / large / x-large / xx-large
+                .
+            font-familly        : set font type from system (system font type, font type)
+            font type : serif, sans-serif, monospace, cursive
+        color               : set letter color          (color)
+
+        vertical-align          :                           (baseline / px / sub / super / top / bottom / middle / text-bottom / text-top ...)
+        text-align              : set text alignement       (format : center, right, left, justify)
+        text-decoration         : set text decoration       (underline / overline / line-trought, color)
+        text-shadow             : set text shadow           (px, px, px, color)
+        text-transform          : modify text               (capitalize / uppercase / lowercase)
+        text-indent             : add indent                (px / % / em)
+        text-overflow           : break text                (clip / ellipsis)
+        letter-spacing          : set letter spacing        (px)
+        white-space             : modify white space        (normal / nowrap / pre)
+            normal
+            nowrap      : disable line break
+            pre         : print white space, tabulation and line break
+            pre-line
+            pre-wrap
+    list-style  : set all list parameter    (image / type, position)
+        list-style-image    : set image for point                           (url)
+        list-style-type     : set point style                               (none / decimal / circle / disc / lower-latin / upper-roman)
+        list-style-position : set point image position relative to point    (outside / inside)
+    table:
+        border-collapse : sticks table cells    (separate / collapse)
+        border-spacing  : set border spacing    (px)
+    
+    display : define element display method
+        none    : undisplay element
+        block
+        inline
+        inline-block
+        inline-table
+        list-item
+        flex
+        grid
+        inline-flex
+        .
+    visibility  : manage element visibility
+        hidden      : hide element
+        visible     : default
+        collapse    : collapse cells in table
+    opacity     : manage element opacity  (value : 0 to 1)
+    position    : manage element position
+        relative    : able left, top, right & bottom properties which we can move element       (px)
+        absolute    : transform element to an absolute element which do not interact with other and is over them
+        fixed       : ?
+    z-index     : set element priority in relation to other elements with the z-index property  (int)
+    float       : (left | right)
+    clear       : clear properties
+        left    : erase left float
+    
+
+    flex-direction  : set flex box align and ordering                                           (row / column / row-reverse / column-reverse)
+    flex-wrap       : set flex box wrapping
+        nowrap  : default
+        wrap
+        wrap-reverse
+    flex-flow       : set flex-direction and flex-wrap                                          (flex-direction, flex-wrap)
+    order           : set element order in relation to other elements with the order property   (int)
+    flex-grow       : set flex-box element size in relation to other element in flex-box        (int)
+    flex-shrink     : set flex-box element shrink in relation to other element in flex-box      (int)
+                      when another element is growing
+    flex-basis      : set flex-box element base size                                            (px)
+    flex            : set flex-grow, flex-shrink and flex-basis                                 (flex-grow, flex-shrink, flex-basis)
+
+    grid container:
+        grid-template-columns   : set grid columns size                         (px / fr / min-content / max-content)
+        grid-template-rows      : set grid rows size                            (px / fr / min-content / max-content)
+        grid-auto-columns       : set grid columns size for undefined columns   (px / fr / min-content / max-content)
+        grid-auto-rows          : set grid rows size for undefined rows         (px / fr / min-content / max-content)
+        grid-auto-flow          : set undefined case position                   (row / column)
+        grid-template-areas     : set grid template areas                       ("element")
+        column-gap              : set marge between columns                     (px)
+        row-gap                 : set marge between rows                        (px)
+        gap                     : set grid grid-column-gap and grid-row-gap     (grid-column-gap, grid-row-gap)
+        grid                    : set all grid parameters                       ()
+    grid item:
+        grid-column         : force item column     (int)
+        grid-row            : force item row        (int)
+        grid-column-start   : force item column     (int)
+        grid-row-start      : force item row        (int)
+        grid-area           : set item grid area    (name)
+
+    justify-content : manage all element on main axe        (flex-start / flex-end / center / space-between / space-around / space-evenly / start / end)
+    align-content   : manage element on second axe          (flex-start / flex-end / center / baseline / stretch)
+    place-content   : set justify-content and align-content (justify-content, align-content)
+
+    justify-self : manage all element on main axe           (flex-start / flex-end / center / space-between / space-around / space-evenly / start / end)
+    align-self   : manage element on second axe             (flex-start / flex-end / center / baseline / stretch)
+    place-self   : set justify-self and align-self          (justify-content, align-content)
+
+    justify-items : manage all element on main axe          (flex-start / flex-end / center / space-between / space-around / space-evenly / start / end)
+    align-items   : manage element on second axe            (flex-start / flex-end / center / baseline / stretch)
+    place-items   : set justify-items and align-items       (justify-content, align-content)
+    
+    repeat({repetition}, {value})
+    minmax({minimum}, {maximum})
+
+
+color:
+    rgb     : rgb(255, 255, 255)        (Red Green Blue)
+    rgba    : rgba(255, 255, 255, 1.0)  (Red Green Blue Alpha)
+    hsl     : hsl(359, 100, 100)        (Hue Saturation Lightness)

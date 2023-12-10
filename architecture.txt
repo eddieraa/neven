@@ -1,0 +1,2 @@
+architecture :
+    Ensemble d'éléments mis en relation pour former une structure globale qui se veut organisée.

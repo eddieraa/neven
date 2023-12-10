@@ -1,0 +1,97 @@
+p
+{
+    background-color: hsl(0, 54%, 57%);
+    margin: auto;
+    height: 30px;
+    border: 10px solid;
+    border-radius: 5px 20px 2px 100px;
+    padding: 30px;
+    text-align: center;
+    font-style: unset;
+    font-weight: bold;
+}
+
+h1
+{
+    font-variant: small-caps;
+}
+
+h2
+{
+    text-align: center;
+    /* background-color: #cccccc; */
+}
+
+/* div
+{
+    background-color: #bbbbbb;
+} */
+
+#koa
+{
+    background-color: #dddddd;
+    height: 500px;
+    text-align: center;
+    background-image: url(kricone.png);
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: 300%;
+    background-origin: border-box;
+}
+/* 
+img
+{
+    background-color: #aaaaaa;
+} */
+
+#testcss
+{
+    list-style-image: url(kricone.png); 
+    list-style-position: inside;
+    list-style-type: lower-roman;
+    list-style: url(kricone.png) inside;
+}
+
+#tb1
+{
+    background-color: #EEE;
+    width: 500px;
+    height: 350px;
+}
+
+#tb2
+{
+    background-color: #CCC;
+    width: 350px;
+    height: 200px;
+    padding-top:5%;
+    padding-left:5%;
+    font-family: cursive;
+}
+
+#tb1, #tb2
+{
+    margin: auto;
+}
+
+
+.container
+{
+    background-color: #EEE;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 2fr;
+    grid-auto-flow: column;
+}
+
+.item
+{
+    background-color: #CCC;
+    border: solid black;
+}
+
+#F
+{
+    align-self: center;
+}

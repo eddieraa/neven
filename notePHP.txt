@@ -1,0 +1,75 @@
+Introduction:
+    PHP - 1994
+
+<?PHP   ?>
+<?= {string} ?>   : send {string} to console
+'<br>'            : equivalent to '\n'
+==                : equality operator which verify value
+===               : equality operator which verify value and type
+!=
+!==
+and, or, xor
+<=>               : return 0 if == else -1 if < else 1 if >
+++
+
+variable:
+    ${name} = {value};
+    ({type}){variable}                             : convert {variable} to {type}
+    ${name} = ({boolean}) ? {value1} : {value2};   : = {value1} if {boolean} else {value2}
+    ${name} = {variable} ?? {value}                : = {variable} if variable is set else {value}
+
+function:
+    echo()        : print {string}
+    print()
+    var_dump()    : print : {variable} type, {variable} length and {variable} content
+    gettype()     : return {variable} type
+    is_{type}()   : return true if {variable} is {type} else false
+    isset()       : return true if {variable} is set else false
+    unset()       : delete {variable}
+    rand(,)       : generate random number
+
+structure:
+    echo {string};   : print {string}
+    print {string};
+
+    if()                    |
+    {                       |
+        {instruction}       |
+    }                       : if statement
+    elseif()                |
+    {                       |
+        {instruction}       |
+    }                       : else if statement
+    else()                  |
+    {                       |
+        {instruction}       |
+    }                       : else statement
+
+    switch({variable})      |
+    {                       |
+        case {variable}:    |
+            {instruction}   : if {variable} == {variable} do {instruction}
+                            |
+        default:            |
+            {instrucion}    : else do {instruction}
+    }                       : switch statement
+
+    break;
+    break {number};         : interrupt {number} nested loops if any
+    continue;
+
+    while()                 |
+    {                       |
+        {instruction}       |
+    }                       : while loop
+
+    do                      |
+    {                       |
+        {instruction}       |
+    }                       :do {instruction}
+    while();                :repeat {instruction} if true
+
+    for($i = {value} ; {boolean} ; {incremention})  |
+    {                                               |
+        {instuction}                                |
+    }                                               : repeat {instructon} and {incrementation} while true

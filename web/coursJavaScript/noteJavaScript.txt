@@ -1,0 +1,88 @@
+introduction:
+    JavaScript : 1995 - Brendan Eich
+    Paradigme : script, imperative, object-oriented
+
+    addons:
+        library:
+            Jquery
+            React
+        platform:
+            NodeJS
+        framework:
+            Angular
+            VueJS
+            Electron
+        overlay:
+            TypeScript
+        (etc...)
+
+break;
+continue;
+
+functions:
+    build:
+        let {name} = function({argument}) {instruction}     : anonymous function
+        let {name} = ({argument}) => {instruction}          : anonymous function
+        function {name}({argument}) {instruction}
+                        {argument} : ...{name}              : function with unlimited argument
+                        {argument} : {argument} = {value}   : function with default value
+
+
+    alert(); / confirm();   : send message to client with pop-up
+    typeof();               : return type of a variable
+    prompt();               : return string input
+    parseInt();             : return variable converted in integer
+    parseFloat();           : return variable converted in float
+
+    class document:
+        document.write(); : write on html page
+
+    class console:
+        console.log();     : send message to console
+        console.clear();   : clear console
+        console.error();   : send message to console as error
+
+variable:
+    declaration:
+        {keyword} {name};                       : variable declaration without value
+        {keyword} {name} = {value};             : variable declaration
+        {name} = {value};                       : global variable declaration
+        {boolean} ? {case_true} : {case_false}  : if declaration
+
+        (keyword : var, let, const)
+
+    variables are dynamics
+
+keyword:
+    var      : declare variable with scope in a function
+    let      : declare variable with scope in a conditionnal structure
+    const    : declare constant variable for number, string, bool ... 
+               but mutable content for array, object ...
+    typeof   : return type of a variable
+
+
+statement:
+    if(boolean) {instruction}
+    else if(boolean) {instruction}
+    else(boolean) {instruction}
+
+    switch(value1)
+    {
+        case {value2}: {instruction}    : if value1 == value2 then do intruction and other case
+        default: {instruction}          : if no case have been valided perform instruction
+    }
+
+    do{instruction} while(boolean)      : perform instruction then repeat until boolean == false
+    while(boolean) {instruction}        : while boolean == true perform instruction
+
+    for(let i = 0; i < 5; i++) {instruction};   : do instruction 5 times
+
+    unknown:
+        for(let i in "test") {document.write(i)}; // output : 1234
+        for(let i of "test") {document.write(i)}; // output : test
+
+
+web:
+    - BOM (Browser Object Model)
+        - DOM : Document (Document Object Model)
+        window.document, window.screen, window.history, window.navigator
